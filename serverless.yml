@@ -1,0 +1,12 @@
+service: scala-web-scraper
+
+provider:
+  name: aws
+  runtime: java8
+  region: us-east-1
+  stage: dev
+
+package:
+  artifact: target/scala-2.10/todos.jar
+
+functions:
