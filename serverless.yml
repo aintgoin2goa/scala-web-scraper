@@ -7,6 +7,6 @@ provider:
   stage: dev
 
 package:
-  artifact: target/scala-2.10/todos.jar
+  artifact: target/scala-2.12/scraper.jar
 
 functions:

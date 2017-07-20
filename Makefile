@@ -2,6 +2,9 @@
 
 sinclude .env
 
+clean:
+	sbt clean
+
 test:
 	sbt test
 

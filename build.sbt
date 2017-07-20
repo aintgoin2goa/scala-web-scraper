@@ -2,11 +2,11 @@ import Dependencies._
 import sbt.Keys._
 import sbt._
 
-name := "todos"
+name := "scraper"
 
 resolvers += Resolver.sonatypeRepo("public")
 scalaVersion := "2.12.1"
-assemblyJarName in assembly := "todos.jar"
+assemblyJarName in assembly := "scraper.jar"
 
 libraryDependencies ++= Seq(
   "com.amazonaws" % "aws-lambda-java-events" % "1.1.0",
