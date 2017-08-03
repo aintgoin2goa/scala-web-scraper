@@ -1,12 +1,23 @@
 service: scala-web-scraper
 
+plugins:
+  - serverless-offline
+
 provider:
   name: aws
   runtime: java8
-  region: us-east-1
+  region: eu-west-1
   stage: dev
 
 package:
   artifact: target/scala-2.12/scraper.jar
 
 functions:
+  test:
+    handler: scraper.Main::test
+    events:
+      - http:
+          path: test
+          method: get
+          cors: true
+

@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += scalaTest % Test
+libraryDependencies += "org.scalamock" %% "scalamock-scalatest-support" % "3.5.0" % Test
 
 scalacOptions ++= Seq(
   "-unchecked",
