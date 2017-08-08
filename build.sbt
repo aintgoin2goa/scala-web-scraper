@@ -12,7 +12,8 @@ libraryDependencies ++= Seq(
   "com.amazonaws" % "aws-lambda-java-events" % "1.1.0",
   "com.amazonaws" % "aws-lambda-java-core" % "1.1.0",
   "com.github.seratch" %% "awscala" % "0.5.+",
-  "org.json4s" %% "json4s-native" % "3.4.2"
+  "org.json4s" %% "json4s-native" % "3.4.2",
+  "net.ruippeixotog" %% "scala-scraper" % "2.0.0"
 )
 
 libraryDependencies += scalaTest % Test
